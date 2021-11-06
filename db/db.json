@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Bootcamp Schedule",
+        "text": "Every Tues & Thurs 6:30p-9:30p & Sat 10a-2p",
+        "id": "0"
+    },
+    {
+        "title": "Research topics for project #3",
+        "text": "App that solves a real world problem?",
+        "id": "1"
+    },
+    {
+        "title": "Doctors Appointment, Tues @ 10am",
+        "text": "Yearly Physical. Get prescription refilled",
+        "id": "2"
+    }
+    
+]
