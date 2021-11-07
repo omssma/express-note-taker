@@ -1,5 +1,5 @@
 // Dependencies
-const path = require('path');
+const path = require('path'); // Path module
 
 module.exports = (router) => 
 {
@@ -9,7 +9,7 @@ module.exports = (router) =>
         res.sendFile(path.join(__dirname, '../public/notes.html' ));
 
     });
-
+    
     router.get('*', (req ,res) => 
     {
             res.sendFile(path.join(__dirname, '../public/index.html' ));

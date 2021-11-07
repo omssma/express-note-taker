@@ -1,7 +1,7 @@
 // Dependencies
-const fs = require('fs');
-const path = require('path');
-const notes = require('../db/db.json');
+const fs = require('fs');  // File system module
+const path = require('path'); // Path module
+const notes = require('../db/db.json'); // Notes module added to database
 
 module.exports = (app) => 
 {
@@ -11,7 +11,7 @@ module.exports = (app) =>
         return res.json(notes);
     });
 
-    // Post new note to server
+    // Post and save new note to database
     app.post('/api/notes', (req, res) => 
     {    
         let id = notes.length + 1
@@ -29,7 +29,7 @@ module.exports = (app) =>
         }));
     });
 
-    // Delete saved notes from server
+    // Delete saved notes from database
     app.delete('/api/notes/:id', (req, res) => 
     {
         let id = notes.length - 1
