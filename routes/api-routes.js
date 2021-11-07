@@ -6,13 +6,13 @@ const notes = require('../db/db.json'); // Notes module added to database
 module.exports = (app) => 
 {
     // Retrieve stored notes from database
-    app.get('/api/notes', (req, res) => 
+    app.get('/api/notes', (req, res) =>
     {
         return res.json(notes);
     });
 
     // Post and save new note to database
-    app.post('/api/notes', (req, res) => 
+    app.post('/api/notes', (req, res) =>
     {    
         let id = notes.length + 1
         console.log(id);

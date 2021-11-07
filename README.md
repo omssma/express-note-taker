@@ -5,8 +5,6 @@
   ### Description
   A simple note app build with Express.js framework that is able to take notes, save, and them
 
-  ## Video Demo
-
   ### Table of Cotents:
   * [Installation](#installation)
   * [Usage](#usage)
